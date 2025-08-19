@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sanatan Dharma - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      background: #b34700;
+      color: white;
+      padding: 20px;
+      margin: 0;
+    }
+    .options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .option {
+      padding: 40px;
+      border-radius: 12px;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+    }
+    .option:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+    /* Different colors except green */
+    .classification { background: #ff5733; }   /* Red-Orange */
+    .rulers { background: #2980b9; }           /* Blue */
+    .spread { background: #8e44ad; }           /* Purple */
+    .protectors { background: #f39c12; }       /* Orange-Yellow */
+    .ancientist { background: #e74c3c; }       /* Dark Red */
+  </style>
+</head>
+<body>
+  <h1>Sanatan Dharma Website</h1>
+
+  <div class="options">
+    <a href="classification.html" class="option classification">Classification of Sanatan Dharma</a>
+    <a href="rulers.html" class="option rulers">Great Hindu Rulers</a>
+    <a href="spread.html" class="option spread">Spread of Hinduism</a>
+    <a href="protectors.html" class="option protectors">Protector Organisations</a>
+    <a href="ancientist.html" class="option ancientist">Sanatan Ancientist</a>
+  </div>
+</body>
+</html>
