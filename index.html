@@ -17,6 +17,24 @@
       padding: 20px;
       margin: 0;
     }
+
+    /* Menu Bar - Simple */
+    nav {
+      background: #ffffff;
+      padding: 12px;
+      border-bottom: 2px solid #ddd;
+    }
+    nav a {
+      color: #000000;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #b34700;
+    }
+
+    /* Options Grid */
     .options {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -39,23 +57,41 @@
       transform: scale(1.05);
       opacity: 0.9;
     }
-    /* Different colors except green */
+
+    /* Colors (no green) */
     .classification { background: #ff5733; }   /* Red-Orange */
     .rulers { background: #2980b9; }           /* Blue */
     .spread { background: #8e44ad; }           /* Purple */
     .protectors { background: #f39c12; }       /* Orange-Yellow */
     .ancientist { background: #e74c3c; }       /* Dark Red */
+    .warriors { background: #ff9933; }         /* Saffron */
+    .contact { background: #9b59b6; }          /* Violet */
   </style>
 </head>
 <body>
   <h1>Sanatan Dharma Website</h1>
 
+  <!-- Menu Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="classification.html">Classification</a>
+    <a href="rulers.html">Great Hindu Rulers</a>
+    <a href="spread.html">Spread of Hinduism</a>
+    <a href="protectors.html">Protector Organisations</a>
+    <a href="ancientist.html">Sanatan Ancientist</a>
+    <a href="warriors.html">Great Warriors</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Options on Home Page -->
   <div class="options">
     <a href="classification.html" class="option classification">Classification of Sanatan Dharma</a>
     <a href="rulers.html" class="option rulers">Great Hindu Rulers</a>
     <a href="spread.html" class="option spread">Spread of Hinduism</a>
     <a href="protectors.html" class="option protectors">Protector Organisations</a>
     <a href="ancientist.html" class="option ancientist">Sanatan Ancientist</a>
+    <a href="warriors.html" class="option warriors">Great Warriors</a>
+    <a href="contact.html" class="option contact">Contact</a>
   </div>
 </body>
 </html>
