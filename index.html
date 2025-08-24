@@ -8,8 +8,16 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #ffecd2, #fcb69f);
       color: #333;
+      background: linear-gradient(270deg, #ffecd2, #fcb69f, #ffe29f, #ffa99f, #86a8e7, #91eae4);
+      background-size: 1200% 1200%;
+      animation: gradientBG 25s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     /* Moving text */
@@ -29,7 +37,7 @@
     .moving-text span {
       display: inline-block;
       padding-left: 100%;
-      animation: marquee 18s linear infinite;
+      animation: marquee 22s linear infinite;
     }
 
     @keyframes marquee {
@@ -42,18 +50,20 @@
       padding: 20px;
     }
 
-    /* Stylish animated heading */
+    /* Royal Golden Heading */
     header h1 {
-      font-size: 3em;
+      font-size: 3.5em;
       font-family: "Brush Script MT", cursive;
-      color: #6a1b9a;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      background: linear-gradient(90deg, #ffd700, #ffcc00, #ff9900, #ffd700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
       animation: glow 2s ease-in-out infinite alternate;
     }
 
     @keyframes glow {
-      from { text-shadow: 2px 2px 5px #ff80ab, 0 0 10px #ff4081; }
-      to { text-shadow: 2px 2px 20px #f50057, 0 0 30px #ff1744; }
+      from { text-shadow: 2px 2px 8px #ffcc00, 0 0 12px #ffb300; }
+      to { text-shadow: 2px 2px 18px #ffd700, 0 0 30px #ff6f00; }
     }
 
     .container {
@@ -65,24 +75,27 @@
       margin: 15px auto;
       padding: 20px;
       border-radius: 12px;
-      font-size: 1.4em;
+      font-size: 1.6em;
       font-weight: bold;
       text-align: center;
       cursor: pointer;
       transition: transform 0.2s;
+      font-family: "Brush Script MT", cursive; /* All folders cursive */
+      box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
     }
 
     .option:hover {
       transform: scale(1.05);
+      box-shadow: 4px 8px 16px rgba(0,0,0,0.3);
     }
 
     /* Colors */
     .classification { background: #ff9999; }
-    .rulers { background: #ffcc99; font-family: "Brush Script MT", cursive; }
+    .rulers { background: #ffcc99; }
     .spread { background: #ffff99; }
-    .protectors { background: #99ff99; font-family: "Brush Script MT", cursive; }
+    .protectors { background: #99ff99; }
     .ancientist { background: #99ccff; }
-    .warriors { background: #ff9933; font-family: "Brush Script MT", cursive; }
+    .warriors { background: #ff9933; }
     .contact { background: #cc99ff; }
 
     footer {
@@ -93,18 +106,17 @@
       font-size: 1.2em;
     }
 
-    /* Royal stylish name */
     footer span {
       font-family: "Brush Script MT", cursive;
-      font-size: 2em;
+      font-size: 1.8em;
       color: #d81b60;
-      text-shadow: 2px 2px 5px #ff80ab, 0 0 15px #ff4081, 0 0 25px #f50057;
-      animation: royalglow 2s ease-in-out infinite alternate;
+      animation: shine 2s linear infinite;
     }
 
-    @keyframes royalglow {
-      from { text-shadow: 2px 2px 5px #ff80ab, 0 0 15px #ff4081, 0 0 25px #f50057; }
-      to { text-shadow: 2px 2px 10px #ff1744, 0 0 25px #ff4081, 0 0 40px #ff80ab; }
+    @keyframes shine {
+      0% { text-shadow: 0 0 5px #ff80ab, 0 0 10px #ff4081; }
+      50% { text-shadow: 0 0 20px #f50057, 0 0 30px #ff1744; }
+      100% { text-shadow: 0 0 5px #ff80ab, 0 0 10px #ff4081; }
     }
   </style>
 </head>
@@ -112,7 +124,10 @@
 
   <!-- Moving Quote -->
   <div class="moving-text">
-    <span>Hamari parampara, hamari sanskriti, hamari sabhyata, hamari pahchan hai; ye hai to hum hain | Our tradition, our culture, our civilization, our identity; if this exists, we exist</span>
+    <span>
+      हमारी परंपरा, हमारी संस्कृति, हमारी सभ्यता, हमारी पहचान है; ये है तो हम हैं; ये नहीं तो हमारा भी कोई अस्तित्व नहीं है |
+      | Our tradition, our culture, our civilization, our identity; if this exists, we exist; if this does not exist, then we too have no existence
+    </span>
   </div>
 
   <header>
